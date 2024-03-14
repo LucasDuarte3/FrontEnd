@@ -1,0 +1,69 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-color: snow;
+}
+
+/*DIV - cabeçalho*/
+#cabecalho {
+    width: 100%;
+    height: 70px;
+    background-color: antiquewhite;
+    color: crimson;
+    text-align: center;
+}
+h3 {
+    padding: 8px;
+}
+A {
+    text-decoration: none; /* usado para definir a formatação(ex:sublinhado ou não)*/
+    color: rgb(0, 1, 2);
+    margin: 0px 10px;
+}
+
+/*DIV - catalogo*/
+#catalogo {
+    width: 80%;
+    background-color: aliceblue;
+    display: flex; /*organiza os blocos em linha(lembrando que os blocos div ficam em colunas p/ padrao)*/
+    flex-direction: row; /*permite alterar a direção na qual os elementos FLEX serão exibidos*/
+    flex-wrap: wrap; /*faz os itens ficarem na mesma linha ou quebrado em varias linhas*/
+    justify-content: center; /*é usado para alinha(justificar) os elemtos ao longo do eixo principal*/
+    gap: 10px; /*espaço automatico em todos os lados(mias vantajoso que o margin*/
+    margin: 10px auto;
+}
+.produtos img {
+    width: 100%;
+}
+.produtos {
+    width: 200px;
+    padding: 8px;
+    border-radius: 5px; /* bordas arredondadas */
+    background-color: antiquewhite;
+    color: rgb(12, 5, 70);
+    box-shadow: 5px 5px black; /*add sombra atras ou ao redor da div*/
+}
+#catalogo button{
+    background-color: snow;
+    margin: 4px 4px;
+    color: black;
+    width: 100%;
+}
+#promocao {
+    width: 100%;
+    background-color: rgb(160, 10, 10);
+    color: snow;
+    display: flex;
+    justify-content: center;
+}
+#banner {
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/promocao.jpg);
+    background-size: cover; /* defini o tamanho da imagem no fundo do elemento*/
+    background-repeat: no-repeat; /*define a maneira como a imagem sera repetida*/
+    background-position: center; /*mexe na posição da imagem*/
+}
